@@ -1,4 +1,15 @@
-<?php namespace App\Presenters;
+<?php
+/**
+ * Source: http://fullstackstanley.com/read/bootstrap-2-pagination-in-laravel-5
+ * Editor: Krissada Boontrigratn
+ * Steps to use:
+ *   1. Create new folder name is 'Presenters' under folder 'app' (app/Presenters)
+ *   2. Create new file name is 'BootstrapTwoPresenter.php'
+ *   3. Copy on this file and paste into 'BootstrapTwoPresenter.php' (app/Presenters/BootstrapTwoPresenter.php)
+ *   4. In blade template just called '{!! $users->appends(['sort' => 'votes', 'order' => 'desc'])->render(new App\Presenters\BootstrapTwoPresenter($users)) !!}'
+ */
+
+namespace App\Presenters;
 
 use Illuminate\Pagination\BootstrapThreePresenter;
 
